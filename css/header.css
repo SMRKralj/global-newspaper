@@ -1,0 +1,144 @@
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav {
+    background: #193C78;
+    padding: 5px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.brand a {
+    color: #DC8A2A;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brand a:hover {
+    text-decoration: none;
+}
+
+.open-slide {
+    display: 1;
+    vertical-align: middle;
+}
+
+.open-slide a {
+    color: #DC8A2A;
+}
+
+.navbar li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-button {
+    display: none;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.date-time {
+    color: #193C78;
+    font-size: 10px;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.brand {
+    order: 2;
+}
+
+
+/* Desktop navbar */
+
+@media all and (min-width: 600px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .brand {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .navbar li {
+        padding: 15px 10px;
+    }
+}
+
+.date-time {
+    font-size: 1em;
+}
+
+.item-button {
+    order: 2;
+    display: inline;
+}

@@ -1,0 +1,81 @@
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    /* Style inputs */
+    
+    input[type=text] {
+        width: 95%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    /* Style for label  */
+    
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        color: #193C78;
+        font-weight: bold;
+    }
+    
+    #title {
+        color: #DC8A2A;
+        display: inline;
+        font-weight: bold;
+    }
+    
+    #lname,
+    #lemail,
+    #lpassword,
+    #lrepeat,
+    #lage,
+    #lphone,
+    #laddress,
+    #lcity,
+    #lcode,
+    #lid {
+        color: red;
+    }
+    /* Style for submit button */
+    
+    input[type=submit] {
+        background-color: #193C78;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle
+    }
+    /* Style for container */
+    
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    
+    @media(min-width: 540px) {
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .col {
+            flex: 100;
+            flex-direction: row;
+        }
+        .nest-col {
+            flex: 100;
+            flex-direction: col;
+        }
+    }

@@ -1,0 +1,35 @@
+/* Footer */
+
+#main-footer {
+    padding: 0.5em;
+    background: #193C78;
+    color: #FFF;
+    text-align: center;
+}
+
+#main-footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#main-footer #global-news {
+    color: #DC8A2a;
+}
+
+#main-footer #global-link {
+    color: #DC8A2a;
+    font-size: 10px;
+}
+
+#main-footer #rights {
+    font-size: 10px;
+}
+
+@media(min-width:568px) {
+    #main-footer #global-link {
+        font-size: 16px;
+    }
+    #main-footer #rights {
+        font-size: 16px;
+    }
+}
